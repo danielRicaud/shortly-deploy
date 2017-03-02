@@ -97,7 +97,7 @@ module.exports = function(grunt) {
     'eslint',
     'concat',
     'uglify',
-    'mochaTest',
+    //'mochaTest',
     'server-dev'
   ]);
 
