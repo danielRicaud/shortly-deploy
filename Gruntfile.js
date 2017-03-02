@@ -37,8 +37,11 @@ module.exports = function(grunt) {
 
     eslint: {
       target: [
-        // Add list of files to lint here
-      ]
+        'public/client/*.js'
+      ],
+      options: {
+        maxWarnings: 0
+      }
     },
 
     cssmin: {
@@ -89,6 +92,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'eslint',
     'concat',
     'uglify',
     'server-dev'
