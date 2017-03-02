@@ -96,7 +96,7 @@ module.exports = function(grunt) {
     'concat',
     'uglify',
     'server-dev',
-    
+    'mochaTest'
   ]);
 
   grunt.registerTask('upload', function(n) {
